@@ -11,7 +11,7 @@ const App = () => {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route
-					path="/admin/login"
+					path="/adminlogin"
 					element={
 						// <PublicRoute>
 						// 	<AdminLogin />
