@@ -25,7 +25,7 @@ const Form = () => {
 			values.option = options[selectedOpt];
 			initializePayment(values).then(({ data }) => {
 				const options = {
-					key: import.meta.env.VITE_KEY_ID,
+					key: "rzp_test_I54yg0JC93Hxui",
 					amount: data.amount, // amount in the smallest currency unit
 					currency: "INR",
 					name: "ECFILE",
