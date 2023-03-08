@@ -25,7 +25,7 @@ const Form = () => {
 			values.option = options[selectedOpt];
 			initializePayment(values).then(({ data }) => {
 				const options = {
-					key: "rzp_test_I54yg0JC93Hxui",
+					key: import.meta.env.VITE_KEY_ID,
 					amount: data.amount, // amount in the smallest currency unit
 					currency: "INR",
 					name: "ECFILE",
@@ -34,7 +34,7 @@ const Form = () => {
 					handler: function (response) {
 						// Handle the successful payment response
 						confirmPayment(response, values);
-						// resetForm({ values: "" });
+						resetForm({ values: "" });
 					},
 					prefill: {
 						name: "Abhi",
